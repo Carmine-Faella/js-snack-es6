@@ -1,27 +1,22 @@
-const arrayBici = [
+const arrayBike = [
     {
-        nome: 'Bici da corsa rossa',
-        peso: 50
+        name: 'Bici da corsa rossa',
+        weight: 50
     },
     {
-        nome: 'Bici da corsa blu',
-        peso: 35
+        name: 'Bici da corsa blu',
+        weight: 35
     },
     {
-        nome: 'Bici da corsa gialla',
-        peso: 20
+        name: 'Bici da corsa gialla',
+        weight: 20
     },
     {
-        nome: 'Bici da corsa verde',
-        peso: 40
+        name: 'Bici da corsa verde',
+        weight: 40
     }
 ];
 
-console.log(arrayBici);
 
-arrayBici.forEach( Element =>{
 
-    const {nome, peso} = Element;
-    console.log(nome,peso)
 
-})

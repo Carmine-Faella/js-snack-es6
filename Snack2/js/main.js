@@ -42,7 +42,7 @@ function numberRandom(min,max){
 console.log(`Il numero random generato è: ${numberRandom(1,10)}`);
 
 const newArrayCalcio = arrayCalcio.map((element)=>{
-    const {punti, falli} = element
+    const {nome, falli} = element
 
-    console.log(`Il numero di punti è ${punti} e il numero di falli è: ${falli}`)
+    console.log(`Il numero di falli è ${falli} della squadra: ${nome}`)
 })
