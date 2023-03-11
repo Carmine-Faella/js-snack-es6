@@ -1,3 +1,5 @@
+//Definisco l'array di oggetti
+
 const arrayCalcio = [
     {
         nome: 'Milan',
@@ -21,6 +23,7 @@ const arrayCalcio = [
     }
 ];
 
+//Inserisco i numeri casuali
 
 arrayCalcio.forEach( element => {
 
@@ -31,6 +34,8 @@ arrayCalcio.forEach( element => {
 
 })
 
+//Creo la funzione per la generazione dei numeri casuali
+
 function numberRandom(min,max){
 
     const random = Math.floor(Math.random()* (max - min)) + min;
@@ -40,6 +45,8 @@ function numberRandom(min,max){
 }
 
 console.log(`Il numero random generato è: ${numberRandom(1,10)}`);
+
+//Estrapolo il numero di falli e la squadra
 
 const newArrayCalcio = arrayCalcio.map((element)=>{
     const {nome, falli} = element
