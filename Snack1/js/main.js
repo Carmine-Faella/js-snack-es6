@@ -19,6 +19,8 @@ const arrayBike = [
     }
 ];
 
+const result = document.getElementById('result');
+
 //Estrapolo i pesi
 
 let numberWeight = arrayBike.map(Element =>{
@@ -41,7 +43,7 @@ arrayBike.forEach(element =>{
     console.log(`La ${name} pesa ${weight} kg`);
 
     if (weight == minNumber){
-        console.log(`La ${name} è quella che pesa meno, con un peso di ${weight} kg`)
+        result.innerHTML += (`La ${name} è quella che pesa meno, con un peso di ${weight} kg`)
     }
 })
 
